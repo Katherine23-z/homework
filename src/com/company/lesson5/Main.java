@@ -15,14 +15,14 @@ public class Main {
 
 
         for (int i = 0; i < employeers.length; i++) {
-            if (employeers[i].age > 40) {
-                printEmp(employeers[i]);
+            int empAge = employeers[i].getAge();
+            if (empAge > 40) {
+                employeers[i].print();
             }
-
         }
+
     }
-    public static void printEmp(Employer employeer){
-        employeer.print();
+
     }
-}
+
 
